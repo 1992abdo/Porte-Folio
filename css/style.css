@@ -1,0 +1,124 @@
+
+/* size of logo */
+.logo{width: 70px;
+height: 28px;}
+
+.height-slide{height: 550px;}
+/* partie de la color overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.overlay-color .overlay {
+  opacity: 0.50;
+}
+/* fin de la partie overlay */
+/* style button popup */
+.margin-photo-popup{
+  height: 20px;
+  width: 20px;
+  border: black solid 1px;
+}
+/* color navbar on hover */
+.nav-link:hover{
+  
+  border-bottom: 4px inset black;
+}
+
+/* slider */
+.z-index-slider{z-index: -1;}
+
+.color-carsoul{
+  background-color: rgba(0, 140, 186, 0.27);
+}
+ 
+
+.color-grais{background-color: #7074759b;}
+
+.card{padding: 0px;}
+
+.card-img-top {
+      height:200px;
+    }
+
+
+.car-prev ,.car-next{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  /* background-color:  */
+}
+
+/*  fin button de slider expirence */
+.container-fluid{
+  background-image: url(image/back.jpg);
+  background-size:cover;
+}
+hr{
+  background: white;	
+}
+/* parite contact */
+.contact-form{
+  background:rgba(0,0,0, .6);
+  color:white;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 3px grey;
+}
+
+
+
+/* font awsom color */
+.fa-github, .fa-linkedin, .fa-facebook {
+  color: salmon;
+}
+  /* strat overlay portfolio */
+.cont {
+  position: relative;
+ 
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.over {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(147, 140, 140, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.cont:hover .over {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* End overlay portfolio */
