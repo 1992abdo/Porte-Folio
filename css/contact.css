@@ -1,0 +1,27 @@
+.controle-form {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.controle-form textarea {
+    height: 200px !important;
+    margin-bottom: 10px;
+}
+
+.controle-form i {
+    float: left;
+    position: relative;
+    top: -25px;
+    left: 10px;
+    color: #75757D;
+}
+
+.controle-form input {
+    padding-left: 30px;
+}
+
+.controle-form .fa-paper-plane {
+    color: white;
+    position: relative;
+    left: 200px;
+}

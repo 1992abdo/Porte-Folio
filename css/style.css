@@ -1,10 +1,51 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 
-/* size of logo */
-.logo{width: 70px;
-height: 28px;}
+/* size the logo */
+.logo {
+  width: 70px;
+  height: 28px;
+}
 
-.height-slide{height: 550px;}
-/* partie de la color overlay */
+.height-slide {
+  height: 550px;
+}
+
+/*start progress bar on scroll where id =myBar*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progressContainer {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progressBar {
+  height: 8px;
+  background: #0A5DB6;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+/*end progress bar on scroll */
+/* parte of color overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -21,55 +62,69 @@ height: 28px;}
 .overlay-color .overlay {
   opacity: 0.50;
 }
-/* fin de la partie overlay */
+
+.fontSize {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.fontSize2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* end  parte overlay */
 /* style button popup */
-.margin-photo-popup{
+.margin-photo-popup {
   height: 20px;
   width: 20px;
   border: black solid 1px;
 }
+
 /* color navbar on hover */
-.nav-link:hover{
-  
+.nav-link:hover {
   border-bottom: 4px inset black;
 }
 
 /* slider */
-.z-index-slider{z-index: -1;}
+.z-index-slider {
+  z-index: -1;
+}
 
-.color-carsoul{
+.color-carsoul {
   background-color: rgba(0, 140, 186, 0.27);
 }
- 
 
-.color-grais{background-color: #7074759b;}
-
-.card{padding: 0px;}
+.card {
+  padding: 0px;
+}
 
 .card-img-top {
-      height:200px;
-    }
+  height: 200px;
+}
 
-
-.car-prev ,.car-next{
+.car-prev,
+.car-next {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  /* background-color:  */
 }
 
 /*  fin button de slider expirence */
-.container-fluid{
-  background-image: url(image/back.jpg);
-  background-size:cover;
+.container-fluid {
+
+  background-size: cover;
+  font-family: 'Akronim', cursive;
 }
-hr{
-  background: white;	
+
+hr {
+  background: white;
 }
-/* parite contact */
-.contact-form{
-  background:rgba(0,0,0, .6);
-  color:white;
+
+/* parte contact */
+.contact-form {
+  background: rgba(0, 0, 0, .6);
+  color: white;
   margin-top: 100px;
   padding: 20px;
   box-shadow: 0px 0px 10px 3px grey;
@@ -77,14 +132,10 @@ hr{
 
 
 
-/* font awsom color */
-.fa-github, .fa-linkedin, .fa-facebook {
-  color: salmon;
-}
-  /* strat overlay portfolio */
+
+/* strat overlay portfolio */
 .cont {
   position: relative;
- 
 }
 
 .image {
@@ -101,7 +152,7 @@ hr{
   background-color: rgba(147, 140, 140, 0.7);
   overflow: hidden;
   width: 100%;
-  height:0;
+  height: 0;
   transition: .5s ease;
 }
 
@@ -121,4 +172,37 @@ hr{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 /* End overlay portfolio */
+/*Start button scroll return to the top*/
+#back2Top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(51, 154, 240, 0.7);
+  color: white;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+/*Fin button scroll return to the top*/
+/* button change language */
+
+.language {
+  width: 35px !important;
+  height: 30px;
+  padding: -6;
+}
+
+/* font awsom color (footer) */
+.fa-github,
+.fa-linkedin,
+.fa-facebook {
+  color: #00ADE8;
+}

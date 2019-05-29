@@ -1,0 +1,9 @@
+Header unset pragma
+FileEtag None
+Header unset Etag
+
+# cache image/pdf docs for 11 days
+<FilesMatch "\.(ico.pdf.jpg.png.gif)$">
+  Header set Cache-Control "max-age=1000000, public, must-revalidate"
+  Header unset Last-Modified
+  </FilesMatch>
